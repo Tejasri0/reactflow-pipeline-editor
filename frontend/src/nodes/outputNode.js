@@ -8,7 +8,6 @@ export const OutputNode = ({ id, data }) => {
   const [outputType, setOutputType] = useState(
     data?.outputType || "Text"
   );
-
   return (
     <BaseNode
       title="Output"
