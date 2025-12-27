@@ -7,7 +7,7 @@ export const TextNode = ({ id, data }) => {
   const [text, setText] = useState(data?.text || "{{input}}");
   const [variables, setVariables] = useState([]);
   const textareaRef = useRef(null);
-
+  
   // 🔹 Auto-resize textarea height
   useEffect(() => {
     if (textareaRef.current) {
